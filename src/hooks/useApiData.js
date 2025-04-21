@@ -1,0 +1,82 @@
+"use client";
+
+export const fetchData = async ( profileId ) => {
+  console.log("fetchData", profileId)
+  try {
+    // const profileId = 2; // Example profile ID
+    const headers = {
+      appKey: "XaysYnkaYpwnYArq",
+    };
+    const res = await fetch(
+      `https://devprofiles.thundertechsol.com/devdock/get_protfolio_by_id?profile_id=${profileId}`,
+      {
+        headers: headers,
+      }
+    );
+
+    const data = await res.json();
+    return data;
+    // console.log("API data:", id); // Log the data to the console
+    // setPortfolioData(data);
+  } catch (error) {
+    console.error("Error fetching portfolio data:", error);
+  }
+};
+
+export const fetchlandingpagedata = async ( ) => {
+
+  try {
+  
+    const headers = {
+      appKey: "XaysYnkaYpwnYArq",
+    };
+    const res = await fetch(
+      `https://devprofiles.thundertechsol.com/devdock/get_protfolio_user_data`,
+      {
+        headers: headers,
+      }
+    );
+
+    const data = await res.json();
+    return data;
+    // console.log("API data:", id); // Log the data to the console
+    // setPortfolioData(data);
+  } catch (error) {
+    console.error("Error fetching portfolio data:", error);
+  }
+};
+
+
+
+export const fetchProjectdetails = async ( profileId,ProjectDetailsid ) => {
+  console.log("fetchData", profileId)
+  try {
+    // const profileId = 2; // Example profile ID
+    const headers = {
+      appKey: "XaysYnkaYpwnYArq",
+    };
+    const res = await fetch(
+      `https://devprofiles.thundertechsol.com/devdock/get_protfolio_user_project_details?profile_id=${profileId}&ProjectDetailsid=${ProjectDetailsid}`,
+      {
+        headers: headers,
+      }
+    );
+
+    const data = await res.json();
+    return data;
+    // console.log("API data:", id); // Log the data to the console
+    // setPortfolioData(data);
+  } catch (error) {
+    console.error("Error fetching portfolio data:", error);
+  }
+};
+
+
+
+
+
+
+
+
+
+
