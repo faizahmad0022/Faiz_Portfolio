@@ -47,7 +47,7 @@ export default function Page() {
           />
 
           <h1 className="text-3xl mt-5 text-center text-slate-700  font-extrabold antialiased hover:subpixel-antialiased">
-            DevDock
+            DevDock 
           </h1>
         </div>
         :

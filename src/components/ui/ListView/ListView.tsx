@@ -32,7 +32,6 @@ const ListItem: React.FC<ListItemProps> = ({ imageUrl, mainheading, maxWords = 7
                 <p>{truncateDescription(SubHeading, maxWords)}</p>
             </div>
 
-
         </div>
     );
 };

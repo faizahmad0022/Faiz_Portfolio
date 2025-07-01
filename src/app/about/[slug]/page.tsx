@@ -1,9 +1,7 @@
 /* eslint-disable react/jsx-no-undef */
 "use client";
 import { AnnimationPage } from "@/components/annimation";
-import CircularProgressBar from "@/components/ui/CircularProgressBar/CircularProgressBar";
 import ExperienceCard from "@/components/ui/ExperienceCard/ExperienceCard";
-import Link from "next/link";
 import { useParams } from "next/navigation";
 import { AwaitedReactNode, JSXElementConstructor, ReactElement, ReactNode, ReactPortal, useEffect, useState } from "react";
 import { fetchData } from "@/hooks/useApiData";
@@ -194,7 +192,7 @@ export default function Page() {
                               />
                             </svg>
                           </span>
-
+                          
                           <span className="relative text-justify justify-normal ">
                             DOWNLOAD CV
                           </span>

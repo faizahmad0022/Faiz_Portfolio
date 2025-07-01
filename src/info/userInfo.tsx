@@ -217,7 +217,7 @@ const wahabUserProfileData = {
 
 const fahadUserProfileData = {
   id: 2,
-  name: "Fahad  Ibrahim.",
+  name: "Fahad  Ibrahim .",
   mainHeading: "I'M  Fahad  Ibrahim.",
   profilePic:
     "https://devprofiles.thundertechsol.com/devdock/public/fahad_pic.png",

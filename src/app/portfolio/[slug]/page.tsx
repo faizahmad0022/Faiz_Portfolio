@@ -4,16 +4,9 @@ import Navbar from "@/components/ui/Navbar/page";
 import { fetchData } from "@/hooks/useApiData";
 import { StaticImport } from "next/dist/shared/lib/get-img-props";
 import Image from "next/image";
-import Link from "next/link";
 import { useParams } from "next/navigation";
 import { AwaitedReactNode, JSXElementConstructor, Key, ReactElement, ReactNode, ReactPortal, useEffect, useState } from "react";
 import { PuffLoader } from "react-spinners";
-
-// export const metadata: Metadata = {
-//   title: "Aasad",
-//   description: "Fahad  Ibrahim RESUME.",
-
-// };
 
 export default function Page() {
   const [loading, setLoading] = useState(true);
@@ -43,10 +36,6 @@ export default function Page() {
         }
       };
       fetchDataAndUpdateState();
-
-
-
-
     }
   }, [id]);
   return (
@@ -66,10 +55,7 @@ export default function Page() {
               DevDock
             </h1>
           </div>
-
           :
-
-
           <div className="min-h-screen min-w-screen bg-gray-800	">
             <title>
               {portfolioData?.data.Name + portfolioData?.data.lastName + " |Portfolio"}
@@ -142,10 +128,8 @@ export default function Page() {
 
               </AnnimationPage>
             </section>
-
           </div>
       }
-
        <Navbar id={id} currentPage={'portfolio'}/>
     </div>
   );
